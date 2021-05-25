@@ -44,10 +44,9 @@ window.addEventListener("drop", function (e) {
         const size = file.size;
         const type = file.type;
         reader = new FileReader();
-        const data=reader.readAsText(file);
         reader.onload = function(event) 
         {
-            $.post('/getNexusData', {data: data});
+            $.post('/getNexusData', {data: event.target.result});
         };
     }
 });
