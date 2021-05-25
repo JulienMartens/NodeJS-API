@@ -1,0 +1,66 @@
+#dropZone {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    background-color: rgba(0,0,0,0.5);
+    transition: visibility 175ms, opacity 175ms;
+    width:  100vw;
+    height: 100vh;
+    z-index: 999;
+
+  }
+
+
+#emgContainer {
+    width: 40vw;
+    height: 80vh;
+    position:fixed;
+    top: 20vh;
+    left: 150vw;
+    z-index: 999;
+    transition: all 0.3s;
+    overflow: hidden;
+    display:hidden;
+}
+
+#emgContainer.active {
+    left: 60vw;
+    display:block;
+}
+
+#cinematicsContainer {
+    width: 40vw;
+    height: 80vh;
+    position:fixed;
+    top: 20vh;
+    left: 150vw;
+    z-index: 999;
+    transition: all 0.3s;
+    overflow: hidden;
+    display:hidden;
+
+}
+
+#cinematicsContainer.active {
+    left: 60vw;
+    display:block;
+}
+
+#powerContainer {
+    width: 40vw;
+    height: 80vh;
+    position:fixed;
+    top: 20vh;
+    left: 150vw;
+    z-index: 999;
+    transition: all 0.3s;
+    overflow: hidden;
+    display:hidden;
+
+}
+
+#powerContainer.active {
+    left: 60vw;
+    display:block;
+
+}
